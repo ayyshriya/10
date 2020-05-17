@@ -1,0 +1,66 @@
+import java.util.*;
+public class matrix_op
+{
+    void main()
+    {
+        Scanner ob=new Scanner(System.in);
+        int m,n;
+        int i,j;
+        System.out.println("Enter the number of rows and columns simultaneously");
+        m=ob.nextInt();
+        n=ob.nextInt();
+        int arr1[][]=new int[m][n];
+        int arr2[][]=new int[m][n];
+        int a[][]=new int[m][n];
+        int b[][]=new int[m][n];
+        System.out.println("Enter the elements of the first array");
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                arr1[i][j]=ob.nextInt();
+            }
+        }
+        System.out.println("Enter the elements of the second array");
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                arr2[i][j]=ob.nextInt();
+            }
+        }
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                a[i][j]=arr1[i][j]+arr2[i][j];
+            }
+        }
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                b[i][j]=arr1[i][j]*arr2[i][j];
+            }
+        }
+        System.out.println("The sum is:");
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                System.out.print (a[i][j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println("The product is:");
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                System.out.print (b[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+ 
