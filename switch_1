@@ -1,0 +1,24 @@
+import java.util.*;
+public class switch_1
+{
+   void main()
+   {
+       int c;
+       System.out.println("1. Ice Cream\n 2.Burger\n 3.Pizza\n 4.Pasta");
+       System.out.println("Enter your choice");
+       Scanner scanner = new Scanner(System.in);
+       c=scanner.nextInt();
+       switch(c)
+       {
+           case 1: System.out.println("You chose Ice Cream for Rs.35");
+           break;
+           case 2:System.out.println("You chose Burger for Rs.150");
+           break;
+           case 3:System.out.println("You chose Pizza for Rs.270");
+           break;
+           case 4:System.out.println("You chose Pasta for Rs.250");
+           break;
+           default: System.out.println("Invalid input");
+        }
+    }
+}
