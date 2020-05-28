@@ -1,0 +1,22 @@
+
+import java.util.*;
+public class Fibonacci
+{
+    void main()
+    {
+        int a,b,c,l;
+        Scanner ob=new Scanner(System.in);
+        System.out.println("Enter the limit");
+        l=ob.nextInt();
+        a=0;
+        b=1;
+        System.out.print(a+" "+b+" ");
+        for(int i=3;i<=l;i++)
+        {
+            c=a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+    }
+}
